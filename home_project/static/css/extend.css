@@ -88,3 +88,19 @@ li a{
 a.dropdown-toggle::after {
     display: none !important;
 }
+
+/* Show dropdown menu on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+
+/* Keep navbar from resizing */
+.navbar,
+#collapsiblenavbar {
+  overflow: visible !important;
+}
